@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lokesh - software and Hardware Engineer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div></div>
+                <nav>
+                    <a href="#home">~/home</a>
+                    <a href="#about">~/about</a>
+                    <a href="#experience">~/experience</a>
+                    <a href="#projects">~/projects</a>
+                    <a href="#contact">~/contact</a>
+                </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                    <div class="flip-image">
+                        <div class="flip-image-inner">
+                            <div class="flip-image-front">
+                                <img src="./IMG_9288.JPG" alt="My Photo" width="300px" height="'300px">
+                            </div>
+                            <div class ="flip-image-back">
+                                <h1>Lokesh Das</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro">
+                        <h2 id='line-1'></h2>
+                        <h4 id='line-2'></h4>
+                    </div>
+            </section>
+
+            <section id="about">
+                <div class="container">
+                    <h2 style="text-align: center;">About Me</h2>
+                    <div class="about card">
+                        <p style="font-size: larger;">
+                        Hi — I’m <strong>Lokesh Das</strong>, a sophomore in computer science and engineering.
+                        I love problem-solving and the math. I have a passion for coding and an incredible interest in problem-solving.
+                        </p>
+
+                        <p style="font-size: larger;">
+                            As a Research Assistant, I optimize machine learning pipelines.
+                            I also serve as the Coding Lead for the Miner Baja team, where I build data systems for our vehicle.
+                            I have created a working GPS speedometer with Arduino and am now developing a wireless system for live sensor data.
+                            Please don't hesitate to reach out to me.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="experience">
+                <div class="container">
+                    <h2 style="text-align: center;" >Professional Experience</h2>
+                    <div class="experience-card">
+                        <h3>Research Assistant</h3>
+                        <p>Missouri S&T Kummer Institue Center for AI & AS</p>
+                        <ul>
+                            <li>> Optimized training pipelines with Ray Tune, improving model accuracy by 12% on the Mill HPC cluster.</li>
+                            <li>> Conducted 100+ testing and validation, ensuring accuracy, reliability, and stability of ML models at scale.</li>
+                            <li>> Leveraged high-performance computing resources to accelerate model development and deployment.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-card">
+                        <h3>Coding Lead, Electronics and DAQ Sub-Team</h3>
+                        <p>Missouri S&T Miner Baja Design Team</p>
+                        <ul>
+                            <li>> Engineered an Arduino-based GPS system, achieving 98% speedometer accuracy for competition use.</li>
+                            <li>> Built a LoRa-based telemetry system to stream data from 10+ sensors to a live dashboard.</li>
+                            <li>> Improved vehicle monitoring through real-time performance insights, enhancing driver decision-making.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-card">
+                        <h3>Software Developer Job Simulation</h3>
+                        <p>Forage: Wells Fargo</p>
+                        <ul>
+                            <li>> Analyzed requirements for a financial portfolio management system to ensure complete data coverage.</li>
+                            <li>> Designed an Entity Relationship Diagram (ERD) to visually represent system data flows.</li>
+                            <li>> Implemented the ERD in Java (IntelliJ) and published the codebase on GitHub for version control.</li>
+                        </ul>
+                        <p>Forage: Quantiumm</p>
+                        <ul>
+                            <li>> Built an interactive Dash app enabling clients to analyze the impact of price changes on sales and profitability.</li>
+                            <li>> Automated quality assurance by implementing a pytest suite and bash script for continuous testing.</li>
+                            <li>> Delivered a user-friendly interface, improving client engagement and usability of the analytics tool.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="container">
+                    <h2 style="text-align: center;">Projects</h2>
+                    <div class="project-grid">
+                        <div class="experience-card">
+                            <h3>Historical Stock Analysis of Top Tech Companies</h3>
+                            <p>IBM Python Project for Data Science Certificate (Sept 2025)</p>
+                            <ul>
+                                <li>Extracted historical stock prices and quarterly financial revenue by querying the yfinance REST API and performing web scraping with BeautifulSoup.</li>
+                                <li>Built a data cleaning pipeline using pandas to process and transform raw, multi-source data, handling missing values and standardizing formats to ensure data integrity.</li>
+                                <li>Performed exploratory data analysis (EDA) to identify and present key trends and insights from the cleaned financial data.</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="experience-card">
+                            <h3>Codémon Rebellion - Turn-Based Strategy Game</h3>
+                            <p>Personal Project</p>
+                            <ul>
+                                <li>Designed and implemented game logic for a 2D grid battlefield, including an optimized AI for enemy pathfinding, creating a robust software solution focused on object-oriented design and architecture.</li>
+                                <li>Implemented core game systems using manual dynamic memory management in C++, requiring the creation of deep copy constructors and assignment operators to prevent memory leaks.</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="experience-card">
+                            <h3>Registered ALU Design</h3>
+                            <p>Course Project (Mar 2025)</p>
+                            <ul>
+                                <li>Architected a hierarchical 4-bit registered ALU in Quartus, designing and integrating core components including selectors, logic/arithmetic units, and an accumulator.</li>
+                                <li>Validated all arithmetic and logic operations through rigorous simulation in ModelSim and subsequently confirmed functionality by deploying the final design to an FPGA development board.</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="experience-card">
+                            <h3>Up/Down Counter & Timer</h3>
+                            <p>Microcontroller Project</p>
+                            <ul>
+                                <li>Created a microcontroller project on an ATmega324pb platform, writing initial features like an up/down counter and alarm system in pure Assembly language.</li>
+                                <li>Devised a new countdown timer in C, utilizing hardware timers and interrupts for precise delays and waveform generation for an audio alarm.</li>
+                                <li>Integrated a hardware user interface with multiple push buttons (for count, mode, and reset logic) and binary output to LEDs.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-card">
+                            <h3>Binary Division Simulator</h3>
+                            <p>Personal Project</p>
+                            <ul>
+                                <li>Developed a Python-based simulator implementing Restoring and Non-Restoring division algorithms from scratch.</li>
+                                <li>Integrated features for overflow detection, hexadecimal conversion, and performance tracking (operation counts, execution time) to provide a comprehensive analysis.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="contact-content">
+                    <h2 style="text-align: center;">Get In Touch</h2>
+                    <p>Please feel free to reach out via email or connect with me on LinkedIn.</p>
+                </div>
+                <div class="contact-buttons">
+                    <a href="mailto:thelokesh08@gmail.com" class="button">Email Me</a>
+                    <a href="https://www.linkedin.com/in/lokesh-das/" target="_blank" class="button">Connect on LinkedIn</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
