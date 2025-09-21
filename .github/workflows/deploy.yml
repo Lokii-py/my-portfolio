@@ -21,4 +21,4 @@ jobs:
 
     - name: Copy files to S3 bucket
       run: |
-        aws s3 sync ./src s3://lokeshdas.com --delete --acl public-read
+        aws s3 sync ./src s3://lokeshdas.com --delete
