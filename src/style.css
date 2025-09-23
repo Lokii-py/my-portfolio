@@ -397,6 +397,10 @@ footer {
         line-height: 1.5;
     }
 
+    .hero-image-container {
+        display: none;
+    }
+
     header {
         padding: 10px 5%;
         justify-content: center;
