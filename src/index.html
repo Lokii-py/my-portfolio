@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Lokesh - Software and Hardware Engineer</title>
+    <title>Lokesh - Computer Science and Engineering student</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -58,13 +58,15 @@
                 <h2 style="text-align: center;">About Me</h2>
                 <div class="about card">
                     <p style="font-size: larger;">
-                        Hi — I am <strong>Lokesh Das</strong>, a sophomore in computer science and engineering.
-                        I love problem-solving and the math. I have a passion for coding and an incredible interest in problem-solving.
+                        Hi — I am <strong>Lokesh Das</strong>, a computer science and computer engineering student at Missouri S&amp;T
+                        who likes owning problems end to end. I love problem-solving and the math behind it.
                     </p>
                     <p style="font-size: larger;">
-                        As a Research Assistant, I optimize machine learning pipelines.
-                        I also serve as the Coding Lead for the Miner Baja team, where I build data systems for our vehicle.
-                        I have created a working GPS speedometer with Arduino and am now developing a wireless system for live sensor data.
+                        Right now I am a Data Science Co-Op at Hunter Engineering, where I build OCR and computer-vision models
+                        and get them running fast on edge hardware. Before that I was a Research Assistant at the Kummer Institute
+                        Center for AI &amp; AS working on continual-learning experiments, and through the OURE program I designed a
+                        two-stage matheuristic for the NP-hard university course timetabling problem.
+                        I also serve as the member for the Miner Baja team, where I build data systems for our vehicle.
                         Please don't hesitate to reach out to me.
                     </p>
                 </div>
@@ -76,32 +78,53 @@
             <div class="container">
                 <h2 style="text-align: center;">Professional Experience</h2>
                 <div class="experience-card">
-                    <h3>Research Assistant</h3>
-                    <p>Missouri S&T Kummer Institue Center for AI & AS</p>
+                    <h3>Data Science Co-Op</h3>
+                    <p>Hunter Engineering Company, St. Louis, MO (Jan 2026 - Present)</p>
                     <ul>
-                        <li>> Optimized training pipelines with Ray Tune, improving model accuracy by 12% on the Mill HPC cluster.</li>
-                        <li>> Conducted 100+ testing and validation, ensuring accuracy, reliability, and stability of ML models at scale.</li>
-                        <li>> Leveraged high-performance computing resources to accelerate model development and deployment.</li>
+                        <li>> Built a custom end-to-end OCR model for license-plate reading that improved recognition accuracy by 80%, using targeted NAS and hyperparameter tuning to optimize it.</li>
+                        <li>> Set up the team's edge-deployment pipeline - structured pruning, sparsity, and post-training quantization - and benchmarked it across NVIDIA Jetson Orin Nano and NXP i.MX 8M / 95, tripling throughput from 50 to 150 FPS.</li>
+                        <li>> Created an active-learning pipeline with novelty detection to prioritize the highest-value samples for labeling, and improved label quality using Cleanlab.</li>
+                        <li>> Automated model training by streaming data directly from AWS S3, removing repeated local downloads for datasets of over 100,000 images.</li>
+                        <li>> Maintained internal PyTorch classification pipelines with DINO-based models, reaching ~93% accuracy on a challenging dataset, and built data-annotation plugins with ONNX conversion for in-app inference.</li>
                     </ul>
                 </div>
                 <div class="experience-card">
-                    <h3>Coding Lead, Electronics and DAQ Sub-Team</h3>
+                    <h3>Research Assistant</h3>
+                    <p>Missouri S&T Kummer Institute Center for AI & AS, Rolla, MO (Sept 2024 - Dec 2025)</p>
+                    <ul>
+                        <li>> Established Ray Tune hyperparameter sweeps for a continual-learning research project, and helped build accuracy graphs and other experiment visualizations.</li>
+                        <li>> Ran ablation experiments comparing MLP and Autoencoder architectures within the continual-learning framework.</li>
+                        <li>> Resolved large-scale data-quality issues and merged data from multiple sources into clean, usable datasets.</li>
+                        <li>> Validated multiple test/train splits for different teams, and prototyped a novelty-detection classifier using Adaptive Resonance Theory (ART).</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>Undergraduate Researcher, OURE Program</h3>
+                    <p>Missouri S&T - Two-Stage Co-Evolutionary Matheuristic for University Timetabling (2025 - 2026)</p>
+                    <ul>
+                        <li>> Designed a two-stage matheuristic for the NP-hard University Course Timetabling Problem, decoupling time and space: a custom genetic constructive-and-repair algorithm (HGCS) for scheduling, then ILP for room allocation.</li>
+                        <li>> Engineered O(1) set-intersection conflict checks and a three-tier penalty system protecting single-section courses, hitting zero hard-constraint violations on a university-scale dataset.</li>
+                        <li>> Closed the loop between the heuristic and ILP phases with conflict-directed feedback, converging on a feasible full-campus schedule in under 10 minutes.</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>Member, Electronics and DAQ Sub-Team</h3>
                     <p>Missouri S&T Miner Baja Design Team</p>
                     <ul>
                         <li>> Engineered an Arduino-based GPS system, achieving 98% speedometer accuracy for competition use.</li>
-                        <li>> Built a LoRa-based telemetry system to stream data from 10+ sensors to a live dashboard.</li>
+                        <li>> Prototyped a LoRa-based telemetry system to stream data from 10+ sensors to a live dashboard.</li>
                         <li>> Improved vehicle monitoring through real-time performance insights, enhancing driver decision-making.</li>
+                        <li>> Designed the new website showcasing the team, members, and our work.</li>
                     </ul>
                 </div>
                 <div class="experience-card">
                     <h3>Software Developer Job Simulation</h3>
-                    <p>Forage: Wells Fargo</p>
+                    <p>Forage: Wells Fargo (Aug 2025)</p>
                     <ul>
-                        <li>> Analyzed requirements for a financial portfolio management system to ensure complete data coverage.</li>
-                        <li>> Designed an Entity Relationship Diagram (ERD) to visually represent system data flows.</li>
-                        <li>> Implemented the ERD in Java (IntelliJ) and published the codebase on GitHub for version control.</li>
+                        <li>> Designed a relational schema and Entity Relationship Diagram (ERD) for a financial system with real-time portfolio tracking.</li>
+                        <li>> Implemented the data model in Java (IntelliJ) and published the codebase on GitHub for version control.</li>
                     </ul>
-                    <p>Forage: Quantiumm</p>
+                    <p>Forage: Quantium (Aug 2025)</p>
                     <ul>
                         <li>> Built an interactive Dash app enabling clients to analyze the impact of price changes on sales and profitability.</li>
                         <li>> Automated quality assurance by implementing a pytest suite and bash script for continuous testing.</li>
