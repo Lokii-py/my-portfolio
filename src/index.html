@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Lokesh - Computer Science and Engineering</title>
+    <title>Lokesh - Computer Science and Engineering student</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -28,7 +28,7 @@
                                 <img src="./IMG_9288.JPG" alt="Lokesh Das Profile Photo">
                             </div>
                             <div class="flip-image-back">
-                                <h4>Software & Hardware Engineer</h4>
+                                <h4>ML & Systems Engineer</h4>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                 <div class="hero-text-content">
                     <p class="hero-greeting">Hey there, I'm</p>
                     <h1 class="hero-name">Lokesh Das</h1>
-                    <h2 class="hero-tagline">I am a Computer Science & Engineering student passionate about AI, hardware, and building impactful projects.<br>I code, I build, I solve.</h2>
+                    <h2 class="hero-tagline">Computer Science & Computer Engineering student at Missouri S&amp;T, working on computer vision, edge AI, and systems built from the ground up.<br>I code, I build, I solve.</h2>
                     <div class="terminal-text">
                         <h2 id="line-1"></h2>
                         <h2 id="line-2"></h2>
@@ -59,15 +59,17 @@
                 <div class="about card">
                     <p style="font-size: larger;">
                         Hi — I am <strong>Lokesh Das</strong>, a computer science and computer engineering student at Missouri S&amp;T
-                        who likes owning problems end to end. I love problem-solving and the math behind it.
+                        who likes owning problems end to end.
                     </p>
                     <p style="font-size: larger;">
-                        Right now I am a Data Science Co-Op at Hunter Engineering, where I build OCR and computer-vision models
-                        and get them running fast on edge hardware. Before that I was a Research Assistant at the Kummer Institute
-                        Center for AI &amp; AS working on continual-learning experiments, and through the OURE program I designed a
-                        two-stage matheuristic for the NP-hard university course timetabling problem.
-                        I also serve as the member for the Miner Baja team, where I build data systems for our vehicle.
-                        Please don't hesitate to reach out to me.
+                        I just wrapped up a Data Science Co-Op at Hunter Engineering, where I built OCR and computer-vision models
+                        and got them running fast on edge hardware. At S&amp;T's Applied Computational Intelligence Lab I research
+                        continual learning and help with data curation, and through the OURE program I designed a two-stage
+                        matheuristic for the NP-hard university course timetabling problem.
+                    </p>
+                    <p style="font-size: larger;">
+                        Right now I am also building a virtual CPU and a network anomaly detector from scratch, because I would
+                        rather implement the math myself than call a library and hope.
                     </p>
                 </div>
             </div>
@@ -79,56 +81,40 @@
                 <h2 style="text-align: center;">Professional Experience</h2>
                 <div class="experience-card">
                     <h3>Data Science Co-Op</h3>
-                    <p>Hunter Engineering Company, St. Louis, MO (Jan 2026 - Present)</p>
+                    <p>Hunter Engineering Company, St. Louis, MO (Jan 2026 - Aug 2026)</p>
                     <ul>
-                        <li>> Built a custom end-to-end OCR model for license-plate reading that improved recognition accuracy by 80%, using targeted NAS and hyperparameter tuning to optimize it.</li>
-                        <li>> Set up the team's edge-deployment pipeline - structured pruning, sparsity, and post-training quantization - and benchmarked it across NVIDIA Jetson Orin Nano and NXP i.MX 8M / 95, tripling throughput from 50 to 150 FPS.</li>
-                        <li>> Created an active-learning pipeline with novelty detection to prioritize the highest-value samples for labeling, and improved label quality using Cleanlab.</li>
-                        <li>> Automated model training by streaming data directly from AWS S3, removing repeated local downloads for datasets of over 100,000 images.</li>
-                        <li>> Maintained internal PyTorch classification pipelines with DINO-based models, reaching ~93% accuracy on a challenging dataset, and built data-annotation plugins with ONNX conversion for in-app inference.</li>
-                    </ul>
-                </div>
-                <div class="experience-card">
-                    <h3>Research Assistant</h3>
-                    <p>Missouri S&T Kummer Institute Center for AI & AS, Rolla, MO (Sept 2024 - Dec 2025)</p>
-                    <ul>
-                        <li>> Established Ray Tune hyperparameter sweeps for a continual-learning research project, and helped build accuracy graphs and other experiment visualizations.</li>
-                        <li>> Ran ablation experiments comparing MLP and Autoencoder architectures within the continual-learning framework.</li>
-                        <li>> Resolved large-scale data-quality issues and merged data from multiple sources into clean, usable datasets.</li>
-                        <li>> Validated multiple test/train splits for different teams, and prototyped a novelty-detection classifier using Adaptive Resonance Theory (ART).</li>
+                        <li>> Engineered an end-to-end OCR license plate recognition pipeline from scratch, hitting 87% total accuracy on a difficult real-world internal dataset against the legacy YOLO system's 55%, and improving stacked-character recognition from 5% to 77%.</li>
+                        <li>> Architected an edge-deployment pipeline (ONNX, TensorRT, NVIDIA ModelOpt) for Jetson and i.MX platforms, using quantization and pruning to raise throughput from a 32 QPS baseline to 134 QPS with only a 1.5% accuracy drop.</li>
+                        <li>> Designed an active-learning pipeline with novelty detection and used Cleanlab for dataset correction, breaking through performance plateaus to recover an additional ~5% model accuracy.</li>
+                        <li>> Built an AWS S3 streaming data loader to handle datasets exceeding 100,000 images, eliminating repeated multi-gigabyte local downloads and streamlining the training workflow.</li>
+                        <li>> Integrated reusable PyTorch and DINO-based models into the core ML infrastructure to power multiple downstream applications, reaching ~93% accuracy on complex classification datasets.</li>
                     </ul>
                 </div>
                 <div class="experience-card">
                     <h3>Undergraduate Researcher, OURE Program</h3>
-                    <p>Missouri S&T - Two-Stage Co-Evolutionary Matheuristic for University Timetabling (2025 - 2026)</p>
+                    <p>Missouri S&T - Two-Stage Co-Evolutionary Matheuristic for University Timetabling (Aug 2025 - Present)</p>
                     <ul>
-                        <li>> Designed a two-stage matheuristic for the NP-hard University Course Timetabling Problem, decoupling time and space: a custom genetic constructive-and-repair algorithm (HGCS) for scheduling, then ILP for room allocation.</li>
-                        <li>> Engineered O(1) set-intersection conflict checks and a three-tier penalty system protecting single-section courses, hitting zero hard-constraint violations on a university-scale dataset.</li>
-                        <li>> Closed the loop between the heuristic and ILP phases with conflict-directed feedback, converging on a feasible full-campus schedule in under 10 minutes.</li>
+                        <li>> Developed the 2-stage Hybrid Gene-Mapped Constructive and Surgical Algorithm (HGCS) alongside Integer Linear Programming to solve the NP-hard University Course Timetabling Problem, decoupling time from space.</li>
+                        <li>> Engineered O(1) set-intersection conflict checks and a three-tier penalty system that protects single-section courses, reaching zero hard-constraint violations on a university-scale dataset.</li>
+                        <li>> Converged on a fully feasible campus schedule in 236 seconds while handling a peak load of 89 simultaneous classes.</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>Research Assistant</h3>
+                    <p>Missouri S&T Applied Computational Intelligence Lab, Rolla, MO (Sept 2024 - Present)</p>
+                    <ul>
+                        <li>> Ran ablation studies comparing MLP and autoencoder architectures, and prototyped a character classifier using Adaptive Resonance Theory (ART).</li>
+                        <li>> Established Ray Tune hyperparameter sweeps for a continual-learning project and built experiment visualizations to accelerate the team's model testing cycles.</li>
+                        <li>> Processed and merged multi-source dataframes containing millions of rows, resolving large-scale quality issues to deliver clean, analysis-ready datasets.</li>
                     </ul>
                 </div>
                 <div class="experience-card">
                     <h3>Member, Electronics and DAQ Sub-Team</h3>
-                    <p>Missouri S&T Miner Baja Design Team</p>
+                    <p>Missouri S&T Miner Baja Design Team, Rolla, MO (Aug 2024 - Jan 2026)</p>
                     <ul>
-                        <li>> Engineered an Arduino-based GPS system, achieving 98% speedometer accuracy for competition use.</li>
-                        <li>> Prototyped a LoRa-based telemetry system to stream data from multiple sensors to a live dashboard.</li>
-                        <li>> Improved vehicle monitoring through real-time performance insights, enhancing driver decision-making.</li>
-                        <li>> Designed the new website showcasing the team, members, and our work.</li>
-                    </ul>
-                </div>
-                <div class="experience-card">
-                    <h3>Software Developer Job Simulation</h3>
-                    <p>Forage: Wells Fargo (Aug 2025)</p>
-                    <ul>
-                        <li>> Designed a relational schema and Entity Relationship Diagram (ERD) for a financial system with real-time portfolio tracking.</li>
-                        <li>> Implemented the data model in Java (IntelliJ) and published the codebase on GitHub for version control.</li>
-                    </ul>
-                    <p>Forage: Quantium (Aug 2025)</p>
-                    <ul>
-                        <li>> Built an interactive Dash app enabling clients to analyze the impact of price changes on sales and profitability.</li>
-                        <li>> Automated quality assurance by implementing a pytest suite and bash script for continuous testing.</li>
-                        <li>> Delivered a user-friendly interface, improving client engagement and usability of the analytics tool.</li>
+                        <li>> Engineered an Arduino-based GPS speedometer that processed real-time location data, hitting 98% measurement accuracy on the team's competition vehicle.</li>
+                        <li>> Prototyped a LoRa-based telemetry system to stream data from 5 sensors to a live dashboard.</li>
+                        <li>> Executed data acquisition (DAQ) operations, including hardware wiring, custom soldering, and component testing for the vehicle's electronic subsystem.</li>
                     </ul>
                 </div>
             </div>
@@ -140,20 +126,32 @@
                 <h2 style="text-align: center;">Projects</h2>
                 <div class="project-grid">
                     <div class="experience-card">
+                        <h3>Custom Virtual CPU & Assembler</h3>
+                        <p>Personal Project (Jul 2026 - Present)</p>
+                        <ul>
+                            <li>Built a virtual computer from first principles in Python to understand how programs are represented, loaded into memory, and executed by a CPU.</li>
+                            <li>Implemented a Fetch-Decode-Execute cycle with a program counter, instruction register, accumulator, memory, flags, and a stack, alongside a custom instruction set.</li>
+                            <li>Wrote an assembler that translates human-readable .asm programs into machine instructions, with symbol resolution and a stack-based CALL/RETURN mechanism supporting nested function calls.</li>
+                            <li>Covered the architecture with automated tests and CI checks to catch regressions while it evolves.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-card">
+                        <h3>Network Anomaly Detection - From-Scratch ML</h3>
+                        <p>Personal Project (Jul 2026 - Present)</p>
+                        <ul>
+                            <li>Building an end-to-end network anomaly detection system without ML frameworks, to implement the underlying mathematics rather than call it.</li>
+                            <li>Wrote the sigmoid activation, binary cross-entropy loss, backpropagation via the chain rule, and gradient descent by hand.</li>
+                            <li>Built separate training and validation pipelines with loss and accuracy tracking across epochs.</li>
+                            <li>Next: rebuild the same pipeline in PyTorch and compare it against the from-scratch implementation.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-card">
                         <h3>Historical Stock Analysis of Top Tech Companies</h3>
                         <p>IBM Python Project for Data Science Certificate (Sept 2025)</p>
                         <ul>
                             <li>Extracted historical stock prices and quarterly financial revenue by querying the yfinance REST API and performing web scraping with BeautifulSoup.</li>
                             <li>Built a data cleaning pipeline using pandas to process and transform raw, multi-source data, handling missing values and standardizing formats to ensure data integrity.</li>
                             <li>Performed exploratory data analysis (EDA) to identify and present key trends and insights from the cleaned financial data.</li>
-                        </ul>
-                    </div>
-                    <div class="experience-card">
-                        <h3>Codémon Rebellion - Turn-Based Strategy Game</h3>
-                        <p>Personal Project</p>
-                        <ul>
-                            <li>Designed and implemented game logic for a 2D grid battlefield, including an optimized AI for enemy pathfinding, creating a robust software solution focused on object-oriented design and architecture.</li>
-                            <li>Implemented core game systems using manual dynamic memory management in C++, requiring the creation of deep copy constructors and assignment operators to prevent memory leaks.</li>
                         </ul>
                     </div>
                     <div class="experience-card">
@@ -174,8 +172,16 @@
                         </ul>
                     </div>
                     <div class="experience-card">
+                        <h3>Codémon Rebellion - Turn-Based Strategy Game</h3>
+                        <p>Personal Project (Apr 2025)</p>
+                        <ul>
+                            <li>Designed and implemented game logic for a 2D grid battlefield, including an optimized AI for enemy pathfinding, creating a robust software solution focused on object-oriented design and architecture.</li>
+                            <li>Implemented core game systems using manual dynamic memory management in C++, requiring the creation of deep copy constructors and assignment operators to prevent memory leaks.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-card">
                         <h3>Binary Division Simulator</h3>
-                        <p>Personal Project</p>
+                        <p>Personal Project (Mar 2025)</p>
                         <ul>
                             <li>Developed a Python-based simulator implementing Restoring and Non-Restoring division algorithms from scratch.</li>
                             <li>Integrated features for overflow detection, hexadecimal conversion, and performance tracking (operation counts, execution time) to provide a comprehensive analysis.</li>
@@ -194,16 +200,18 @@
             <div class="contact-buttons">
                 <a href="mailto:thelokesh08@gmail.com" class="button">Email Me</a>
                 <a href="https://www.linkedin.com/in/lokesh-das/" target="_blank" class="button">Connect on LinkedIn</a>
+                <a href="https://github.com/Lokii-py" target="_blank" class="button">GitHub</a>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p> 2025 Lokesh Das | Software & Hardware Engineer</p>
+        <p>&copy; 2026 Lokesh Das | ML & Systems Engineer</p>
         <div class="footer-links">
         <a href="mailto:thelokesh08@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/lokesh-das/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Lokii-py" target="_blank">GitHub</a>
         <a href="#home">Back to Top ↑</a>
         </div>
     </footer>
