@@ -28,8 +28,8 @@ async function startAnimationSequence() {
   const line1 = document.getElementById('line-1');
   const line2 = document.getElementById('line-2');
 
-  const textForLine1 = 'print("where is he?")';
-  const textForLine2 = 'Either you find him solving a problem or playing with Arduino!';
+    const textForLine1 = 'print("what is he building?")';
+    const textForLine2 = 'A network anomaly detector and a virtual computer, both from scratch.';
 
   // An infinite loop to make the animation repeat
   while (true) {
